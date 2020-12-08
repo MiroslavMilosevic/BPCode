@@ -73,7 +73,7 @@ function convertToNorm(text) {
 
     charArray.splice(0, 10)
     charArray.splice(charArray.length - 10, 10)
-    console.log(charArray);
+    
     let duzinaNiza = charArray.length;
     for (let i = 0; i < duzinaNiza; i++) {
         if (i % 2 !== 0) {
@@ -86,13 +86,15 @@ function convertToNorm(text) {
         )
     }).join('')
 
-    console.log(text);
+   // console.log(text);
+    return text;
 }/////fnk convertToNorm end
 
 
 
 let button = document.getElementById('button');
 button.addEventListener('click', () => {
+
     let textArea = document.getElementById('textArea')
     let bscode= convertToBPCode(textArea.value)
     postTextFromArea(bscode);
@@ -101,7 +103,21 @@ button.addEventListener('click', () => {
         // let textArea = document.getElementById('textArea').value.trim();
        
 
-   convertToNorm('ejcxnifjtvjieodfawnkzbrpzjdtvgamzvrtzftmrpizzlrtzjccewtiiwrlidzkrpzhpjeztvzbrfzpzgrozvzfrezszqrzzozgrkzltvatcokbartcakcqkiantbaecrklayteaxcqkcaatsaxcwkkazjkepdladnpdbvhanzurhzgtsrtibjuejdeaqnitbahcwkdanzprszhtlrfiktaajcdkyayjrewdhasntzlrazntorjinthamczktahdgvtamtkroiwztrpzbceemtgifrxiotyatcskoazctcwrblyy')
+  // convertToNorm('ejcxnifjtvjieodfawnkzbrpzjdtvgamzvrtzftmrpizzlrtzjccewtiiwrlidzkrpzhpjeztvzbrfzpzgrozvzfrezszqrzzozgrkzltvatcokbartcakcqkiantbaecrklayteaxcqkcaatsaxcwkkazjkepdladnpdbvhanzurhzgtsrtibjuejdeaqnitbahcwkdanzprszhtlrfiktaajcdkyayjrewdhasntzlrazntorjinthamczktahdgvtamtkroiwztrpzbceemtgifrxiotyatcskoazctcwrblyy')
+    
+
+
+})
+
+
+
+let button2 = document.getElementById('button2');
+button2.addEventListener('click', () => {
+  //  console.log('123');
+    
+  //  let textArea2 = document.getElementById('textArea2').value.trim()
+  //  let translate = convertToNorm(textArea2);
+//console.log(translate);
     
 
 
