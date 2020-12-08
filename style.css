@@ -1,0 +1,16 @@
+.wraper{
+     display: none; 
+}
+
+#gate{
+    
+    display: block;
+    position: absolute;
+    top: 94%;
+    right: 92%;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+
+}
