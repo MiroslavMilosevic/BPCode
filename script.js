@@ -14,7 +14,7 @@ function postTextFromArea(message) {
 function convertToBPCode(message) {
     let nizZnakova = 'qwertyuiopasdfghjklzxcvbnm;:{}[]<>,.?~`/1234567890'.split('');
 
-    let messageArray = message.trim().split('');
+    let messageArray = message.toLowerCase().trim().split('');
     for (let i = 0; i < 10; i++) {
         let char1 = nizZnakova[Math.floor(Math.random() * 26)]
         let char2 = nizZnakova[Math.floor(Math.random() * 26)]
@@ -116,7 +116,8 @@ button2.addEventListener('click', () => {
 
     //  let textArea2 = document.getElementById('textArea2').value.trim()
     //  let translate = convertToNorm(textArea2);
-    //console.log(translate);
+ ///   //console.log(translate);
+//////    console.log( convertToNorm('ytzbosylyiohvbocqnjhexqatdejkwsvtuwtkmoqjqiwqtpgigsqexmhwsscaiwasivlozgrqitgewlheuftolnsawwdiqwcnvafdragmywdslecwedwanqqcpehqpifsopiatsotkiswsdiocbjrqoyuxsakkjey'))
 })
 
 let gate = document.getElementById('gate');

@@ -6,12 +6,12 @@
 
     display: block;
     position: absolute;
-    top: 94%;
-    right: 92%;
+    top: 90%;
+    right: 90%;
     min-width: 50px;
     max-width: 50px;
     min-height: 50px;
     max-height: 50px;
-    background-color: aqua;
+    background-color: rgba(199, 253, 255, 0.329)
 
 }
